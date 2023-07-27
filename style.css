@@ -1,0 +1,130 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: initial;
+    background-color: black;
+    color: white;
+}
+
+.container {
+    max-width: 90rem;
+    margin: 2rem auto;
+    padding: 0px 2rem;
+  }
+
+.canon {
+    border-radius: 50%;
+    border: 1px solid red;
+}
+
+.login-button {
+    background-color: #be152f;
+    border: 0;
+    width: 100px;
+    height: 40px;
+    border-radius: 12px;
+    color: white;
+    font-size: large;
+}
+
+button:hover {
+    background: white;
+    outline: 1px solid red;
+    color: red;
+    border: none;
+}
+
+.navs:hover {
+    color: red;
+}
+
+.heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-top: 15px;
+    padding-right: 30px;
+}
+
+.navbar-text {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-size: 25px;
+    color: white;
+}
+
+.navbar-text a {
+    color: white;
+    text-decoration:none
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.bold-text {
+    color: white;
+    font-size: xxx-large;
+}
+
+.all-texts {
+    display: flex;
+    flex-direction: column;
+}
+
+.profiles {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0px;
+}
+
+.profile {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid red;
+}
+
+.learn-more {
+    margin-top: 2rem;
+    width: 25%;
+    height: 15%;
+    font-size: x-large;
+}
+
+.red-text {
+    color: red;
+    font-size: 1rem;
+    margin-bottom: 0.9rem;
+}
+  
+.main-head {
+    font-size: 3rem;
+    margin-bottom: 0.3rem;
+}
+
+.small-head {
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+@media (max-width: 800px) {
+    .heading {
+    display: flex;
+    flex-direction: column;
+    }
+    .row {
+        display: grid;
+        grid-template-columns: minmax(200px, 1fr);
+        gap: 2rem;
+    }
+}
+
